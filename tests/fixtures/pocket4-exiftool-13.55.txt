@@ -1,0 +1,11 @@
+[Track3]        SampleTime                      : 0
+[Track3]        Dvtm_osmo_pocket_4_3-2-9-1      : 0x0000c843 (int32u 1137180672, float 400)
+[Track3]        Dvtm_osmo_pocket_4_3-2-10-1     : 0x018f01 (rational 1/143)
+[Track3]        SampleTime                      : 0.0333666666666667
+[Track3]        Dvtm_osmo_pocket_4_3-1-1        : 1 (0x1, signed -1)
+[Track3]        Dvtm_osmo_pocket_4_3-2-9-1      : 0x0000c843 (int32u 1137180672, float 400)
+[Track3]        Dvtm_osmo_pocket_4_3-2-10-1     : 0x018f01 (rational 1/143)
+[Track3]        SampleTime                      : 0.0667333333333333
+[Track3]        Dvtm_osmo_pocket_4_3-1-1        : 2 (0x2, signed 1)
+[Track3]        Dvtm_osmo_pocket_4_3-2-9-1      : 0x0000c843 (int32u 1137180672, float 400)
+[Track3]        Dvtm_osmo_pocket_4_3-2-10-1     : 0x018f01 (rational 1/143)

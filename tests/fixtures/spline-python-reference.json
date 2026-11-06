@@ -1,0 +1,131 @@
+{
+  "source": "Generated using dji_exposure.core.smooth/reference and spline_cli gain math; Python sigma = browser supportSeconds / 6.",
+  "samples": [
+    {
+      "timestamp": 0.0,
+      "iso": 400,
+      "shutterSeconds": 0.01,
+      "sourceIndex": 0,
+      "videoFrame": 0
+    },
+    {
+      "timestamp": 0.04,
+      "iso": 800,
+      "shutterSeconds": 0.01,
+      "sourceIndex": 1,
+      "videoFrame": 1
+    },
+    {
+      "timestamp": 0.1,
+      "iso": 400,
+      "shutterSeconds": 0.005,
+      "sourceIndex": 2,
+      "videoFrame": 2
+    },
+    {
+      "timestamp": 0.2,
+      "iso": 100,
+      "shutterSeconds": 0.02,
+      "sourceIndex": 3,
+      "videoFrame": 3
+    }
+  ],
+  "cases": [
+    {
+      "options": {
+        "supportSeconds": 0,
+        "ignoreIso": false,
+        "reference": "median"
+      },
+      "gains": [0.7071067811865476, 0.3535533905932738, 1.4142135623730951, 1.4142135623730958]
+    },
+    {
+      "options": {
+        "supportSeconds": 0,
+        "ignoreIso": false,
+        "reference": "first"
+      },
+      "gains": [1.0, 0.5, 2.0, 2.0000000000000013]
+    },
+    {
+      "options": {
+        "supportSeconds": 0,
+        "ignoreIso": true,
+        "reference": "median"
+      },
+      "gains": [1.0, 1.0, 2.0, 0.5]
+    },
+    {
+      "options": {
+        "supportSeconds": 0,
+        "ignoreIso": true,
+        "reference": "first"
+      },
+      "gains": [1.0, 1.0, 2.0, 0.5]
+    },
+    {
+      "options": {
+        "supportSeconds": 0.6,
+        "ignoreIso": false,
+        "reference": "median"
+      },
+      "gains": [0.6745457217036154, 0.72563507849265, 0.8426530703216306, 1.1155084818617795]
+    },
+    {
+      "options": {
+        "supportSeconds": 0.6,
+        "ignoreIso": false,
+        "reference": "first"
+      },
+      "gains": [0.9539517080740003, 1.0262029693379708, 1.1916914004241794, 1.5775672239911502]
+    },
+    {
+      "options": {
+        "supportSeconds": 0.6,
+        "ignoreIso": true,
+        "reference": "median"
+      },
+      "gains": [1.1303816465753604, 1.1356483525679248, 1.0935937865992031, 0.8736963492503177]
+    },
+    {
+      "options": {
+        "supportSeconds": 0.6,
+        "ignoreIso": true,
+        "reference": "first"
+      },
+      "gains": [1.1303816465753604, 1.1356483525679248, 1.0935937865992031, 0.8736963492503177]
+    },
+    {
+      "options": {
+        "supportSeconds": 3,
+        "ignoreIso": false,
+        "reference": "median"
+      },
+      "gains": [0.8307183208923481, 0.8347033299211079, 0.8407588666760758, 0.8510552603846425]
+    },
+    {
+      "options": {
+        "supportSeconds": 3,
+        "ignoreIso": false,
+        "reference": "first"
+      },
+      "gains": [1.1748131159177635, 1.1804487697324149, 1.1890125919387393, 1.2035738915649274]
+    },
+    {
+      "options": {
+        "supportSeconds": 3,
+        "ignoreIso": true,
+        "reference": "median"
+      },
+      "gains": [1.0101965663901014, 1.0075474498253336, 1.0034779437035342, 0.9964444889749766]
+    },
+    {
+      "options": {
+        "supportSeconds": 3,
+        "ignoreIso": true,
+        "reference": "first"
+      },
+      "gains": [1.0101965663901014, 1.0075474498253336, 1.0034779437035342, 0.9964444889749766]
+    }
+  ]
+}

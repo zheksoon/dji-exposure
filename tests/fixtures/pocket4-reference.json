@@ -1,0 +1,12 @@
+{
+  "source": "../../sample.MP4",
+  "sourceSize": 1924634038,
+  "exiftoolVersion": "13.55",
+  "protocol": "dvtm_osmo_pocket_4.proto",
+  "firmware": "01.04.12.16",
+  "records": 10255,
+  "sha256": "92f5bc22116f2f6985595e0676b74fe7e9546be24e3e5b5266728a32ee35ce7d",
+  "canonicalFormat": "SampleTime.toFixed(6),FrameNumber,ISO.toFixed(6),ShutterSeconds.toFixed(12)\\n; omitted first frame=0 (protobuf default)",
+  "command": "exiftool -ee -u -a -G1 -s -n -SampleTime -Dvtm_osmo_pocket_4_3-1-1 -Dvtm_osmo_pocket_4_3-2-9-1 -Dvtm_osmo_pocket_4_3-2-10-1 sample.MP4",
+  "note": "Unknown ExifTool tags: compare float/rational annotations, not int32u. Digest verifies this fixture, not all Pocket 4 firmware."
+}

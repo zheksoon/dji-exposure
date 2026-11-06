@@ -1,0 +1,363 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: light dark;
+  color: light-dark(#272b30, #dedfe1);
+  background: light-dark(#fafafa, #181a1d);
+  font-size: 13px;
+  --line: light-dark(#dcdfe3, #3b3f45);
+  --muted: light-dark(#616975, #a3aab3);
+  --accent: light-dark(#edf3fa, #27384d);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 16px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+
+p {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+small,
+.muted {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+button,
+.button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+  background: light-dark(#fff, #23262b);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+
+button,
+.button,
+select {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button:hover:not(:disabled),
+.button:hover {
+  background: var(--accent);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+.chart:focus-visible {
+  outline: 2px solid #527db4;
+  outline-offset: 1px;
+}
+
+.button input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* Two column layout */
+.two-column {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 290px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px solid var(--line);
+  padding-right: 16px;
+}
+
+.main-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.control-val {
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.slider-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.slider-row input[type="range"] {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  accent-color: #527db4;
+}
+
+.num-input {
+  width: 65px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  accent-color: #527db4;
+}
+
+.diag-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.fileline {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+}
+
+.fileline strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.camera-info {
+  font-size: 12px;
+}
+
+.busy-panel {
+  gap: 6px;
+}
+
+progress {
+  width: 100%;
+  accent-color: #527db4;
+}
+
+.drop {
+  border: 1px dashed var(--line);
+  padding: 60px 20px;
+  text-align: center;
+  margin: 10vh auto;
+  max-width: 500px;
+}
+
+.error {
+  color: light-dark(#a13325, #f5a498);
+  border-left: 2px solid currentColor;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.warnings {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Plot and controls */
+.plot-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plot-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.selection-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sel-item strong {
+  color: var(--muted);
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.sel-nav-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.sel-nav-buttons button {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.zoom-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.seconds {
+  width: 75px;
+  font-size: 12px;
+}
+
+.chart {
+  width: 100%;
+  border: 1px solid var(--line);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.chart-series {
+  height: 145px;
+}
+
+.chart-hint {
+  margin-top: 4px;
+}
+
+/* Spline export */
+.export-spl-panel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.spl-export-btn {
+  padding: 6px 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.status-text {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.spl-hint {
+  flex-basis: 100%;
+}
+
+@media (max-width: 850px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+}
