@@ -246,8 +246,9 @@ export function Chart() {
                   tooltip: {
                     callbacks: {
                       title: (items) => {
-                        const idx = items[0]?.dataIndex;
-                        const s = samples[idx];
+                        // dataIndex refers to the decimated dataset, so look up by time instead.
+                        const x = items[0]?.parsed.x;
+                        const s = x === undefined ? undefined : samples[nearest(times, x)];
                         if (!s) return `${items[0]?.parsed.x?.toFixed(6)} s`;
                         const parts = [`${s.timestamp.toFixed(6)} s`];
                         if (s.frame !== undefined) parts.push(`Frame ${s.frame}`);
